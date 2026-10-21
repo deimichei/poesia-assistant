@@ -9,7 +9,7 @@ evidenziati.
 
 ## Come funziona
 
-- **Corpus**: legge i PDF nella cartella `pdf_riferimento/` ed estrae il testo.
+- **Corpus**: legge i PDF e i file di testo (.txt) nella cartella `pdf_riferimento/`, ne estrae il testo e lo ripulisce dai residui di impaginazione (numeri di pagina, indirizzi web, parole spezzate). Per gli eBook di Project Gutenberg toglie intestazione e licenza e ricava autore e titolo dai metadati.
 - **Ricerca**: cerca la parola digitata (match parziale, es. "amor" trova
   "amore", "amorosa") e mostra ~10 parole di contesto attorno a ogni occorrenza.
 - **Interfaccia**: split-layout in Streamlit — scrittura a sinistra, suggerimenti

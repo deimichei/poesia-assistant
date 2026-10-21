@@ -55,8 +55,8 @@ with col_destra:
 
                 # Se ce ne sono di più, bottone per vederli tutti
                 if len(estratti) > LIMITE_VISIBILE:
-                    with st.expander(f"Mostra tutti i {len(estratti)} risultati"):
-                        for estratto in estratti[:LIMITE_VISIBILE]:
+                    with st.expander(f"Mostra gli altri {len(estratti) - LIMITE_VISIBILE} risultati"):
+                        for estratto in estratti[LIMITE_VISIBILE:]:
                             st.markdown(f"{estratto}", unsafe_allow_html=True)
 
                 st.divider()

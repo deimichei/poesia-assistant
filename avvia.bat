@@ -1,3 +1,4 @@
 @echo off
-cd /d C:\Users\adeim\projects\poesia-assistant
+cd /d "%~dp0"
 uv run streamlit run app.py
+pause
